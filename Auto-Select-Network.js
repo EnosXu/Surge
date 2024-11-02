@@ -3,7 +3,7 @@
 const network = $network;
 
 // 列出需要使用 VPN 的 Wi-Fi 名称
-const vpnWiFiList = ["116", "116-5G", "leader bar", "leader bar 2", "Leader bar", "Enos 的 S24"];
+const vpnWiFiList = ["116", "116-5G", "leader bar", "leader bar 2", "Leader bar", "Enos S24"];
 
 if (network.wifi && network.ssid) {
   const ssid = network.ssid;
