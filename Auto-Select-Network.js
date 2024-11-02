@@ -15,7 +15,7 @@ if (network.wifi && network.ssid) {
     $surge.setSelectGroupPolicy("Auto", "Direct");
   }
 } else {
-  // 非 Wi-Fi 连接时默认直连
+  // 非 Wi-Fi 数据网络 连接时默认直连
   $surge.setSelectGroupPolicy("Auto", "Direct");
 }
 
