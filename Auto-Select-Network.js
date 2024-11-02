@@ -9,14 +9,14 @@ if (network.wifi && network.ssid) {
   const ssid = network.ssid;
   if (vpnWiFiList.includes(ssid)) {
     // 如果连接的是指定的 Wi-Fi，使用代理
-    $surge.setSelectGroupPolicy("Auto", "Proxy");
+    $surge.setSelectGroupPolicy("Auto Select Network", "Proxy");
   } else {
     // 其他情况下直连
-    $surge.setSelectGroupPolicy("Auto", "Direct");
+    $surge.setSelectGroupPolicy("Auto Select Network", "Direct");
   }
 } else {
   // 非 Wi-Fi 数据网络 连接时默认直连
-  $surge.setSelectGroupPolicy("Auto", "Direct");
+  $surge.setSelectGroupPolicy("Auto Select Network", "Direct");
 }
 
 $done();
